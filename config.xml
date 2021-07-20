@@ -1,0 +1,83 @@
+ <widget id="A6152935081876"  version="0.0.1">
+
+    <name>测试native</name>
+
+    <description>
+
+        Example For APICloud.
+
+    </description>
+
+    <author email="developer@apicloud.com" href="http://172.16.5.56:8080">
+
+        Developer
+
+    </author>
+
+	<!-- <content src="./yd/example/index.html" /> -->
+    <content src="http://172.16.5.63:8080" />
+	<!-- <content src="http://192.168.1.110:8080" /> -->
+    <!-- http://kaifa.yzkyun.cn/gsk1/#/login -->
+    <!-- <content src="http://kaifa.yzkyun.cn/gsx1/#/" /> -->
+    <!-- <content src="http://kaifa.yzkyun.cn/gsk1/#/login" /> -->
+
+    <access origin="*" />
+
+    <preference name="pageBounce" value="false"/>
+
+	<preference name="appBackground" value="rgba(0,0,0,0.0)"/>
+
+	<preference name="windowBackground" value="rgba(0,0,0,0.0)"/>
+
+	<preference name="frameBackgroundColor" value="rgba(0,0,0,0.0)"/>
+
+	<preference name="hScrollBarEnabled" value="false"/>
+
+	<preference name="vScrollBarEnabled" value="false"/>
+
+	<preference name="autoLaunch" value="true"/>
+
+	<preference name="fullScreen" value="false"/>
+
+	<preference name="autoUpdate" value="true" />
+
+	<preference name="smartUpdate" value="false" />
+
+	<preference name="debug" value="true"/>
+
+	<preference name="statusBarAppearance" value="true"/>
+
+	<permission name="readPhoneState" />
+
+	<permission name="camera" />
+
+	<permission name="record" />
+
+	<permission name="location" />
+
+	<permission name="fileSystem" />
+
+	<permission name="internet" />
+
+	<permission name="bootCompleted" />
+
+	<permission name="hardware" />
+	
+	<preference name="urlScheme" value="GSX1" />
+	
+	<preference name="autoLaunch" value="false" />
+	
+	<feature name="wx">
+	    <param name="urlScheme" value="wx8251df7004ca4592"/>
+	    <param name="apiKey" value="wx8251df7004ca4592"/>
+	    <param name="apiSecret" value="bf644b885c3d512f0fdb091c5c345321"/>
+	</feature>
+	
+	<feature name="ajpush">
+	    <param name="app_key" value="617e7987c4f83c8f7cd7c67e"/>  
+	    <param name="channel" value="tianfu"/>
+	</feature> 
+
+
+
+</widget>

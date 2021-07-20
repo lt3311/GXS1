@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="iconfont.css" />
+	<!-- <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" /> -->
+	<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
+	<script crossorigin="anonymous"
+		integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ=="
+		src="https://lib.baomitu.com/jquery/3.5.1/jquery.js"></script>
+	<script src="api.js"></script>
+	<script type="text/javascript"
+		src="https://webapi.amap.com/maps?v=1.4.15&key=7f0276a689de27b59d53925c0537dfa5&plugin=AMap.ToolBar"></script>
+	<!-- <base href="https://webapi.amap.com/ui/1.1/ui/misc/PositionPicker/examples/"/> -->
+	<script src="https://webapi.amap.com/ui/1.1/main.js?v=1.1.1"></script>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6yAoynmTPNlTBa8z1X4LfwGE"></script>
+	<script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+	<script type="text/javascript" src="./jquery.gesture.password.js"></script>
+
+	<script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
+	<script src="https://cdn.bootcss.com/moment.js/2.24.0/locale/zh-cn.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="./ydplayer-compatible.js"></script>
+	<script src="./ydapp.js?v=1"></script>
+	<title>
+		yygs
+	</title>
+<link href="static/css/app.9eb64fe1.css" rel="preload" as="style"><link href="static/css/chunk-vendors.70074feb.css" rel="preload" as="style"><link href="static/js/app.9a24c5ee.js" rel="preload" as="script"><link href="static/js/chunk-vendors.8be308eb.js" rel="preload" as="script"><link href="static/css/chunk-vendors.70074feb.css" rel="stylesheet"><link href="static/css/app.9eb64fe1.css" rel="stylesheet"></head>
+<script src="./echarts.min.js"></script>
+
+<body>
+	<noscript>
+		<strong>We're sorry but
+			yygs doesn't work properly without JavaScript enabled.
+				Please enable it to continue.
+		</strong>
+	</noscript>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+<script type="text/javascript" src="static/js/chunk-vendors.8be308eb.js"></script><script type="text/javascript" src="static/js/app.9a24c5ee.js"></script></body>
+<script>
+	var ajpush = api.require('ajpush');
+	if (api.systemType == "android") {
+		ajpush.init(function (ret) {
+			var param = {
+				alias: 'user1',
+				tags: ['user']
+			};
+			ajpush.bindAliasAndTags(param, function (ret) { });
+			ajpush.setListener(jpushListener);
+		});
+	} else if (api.systemType == "ios") {
+		ajpush.setListener(jpushListener);
+		var param = {
+			alias: 'user2',
+			tags: ['user']
+		};
+		ajpush.bindAliasAndTags(param, function (ret) { });
+	}
+
+	function jpushListener(ret) { }
+</script>
+
+</html>
